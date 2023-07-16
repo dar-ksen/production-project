@@ -1,9 +1,12 @@
-import React from 'react';
 import Counter from './components/counter';
+import './index.scss';
 
 const App = () => {
   return (
-    <Counter/>
+    <div className='app'>
+      appTitle
+      <Counter/>
+    </div>
   );
 };
 

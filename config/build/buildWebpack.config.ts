@@ -12,7 +12,7 @@ export function buildWebpackConfig(options: IBuildOptions): webpack.Configuratio
     entry: paths.entry,
     plugins: buildPlugins(options),
     module: {
-      rules: buildLoaders(),
+      rules: buildLoaders(options),
     },
     resolve: buildResolvers(),
     output: {
